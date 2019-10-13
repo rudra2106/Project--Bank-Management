@@ -1,6 +1,7 @@
-/*OOPS PROJECT
- BANK MANAGMENT SYSTEM IN C++
- */
+/*******************************************************************************************
+		---------------------OOPS PROJECT--------------------------
+ 	         B A N K    M A N A G E M E N T   S Y S T E M   I N   C + + 
+ *******************************************************************************************/
 
 #include<stdio.h>
 #include<iostream>
@@ -13,23 +14,25 @@ using namespace std;
  int acc=0;
       int num;
     int x,y,cl,a,b;
+//--------------------------------------------------------------------------------------------------------------------------------------
 class account
 {
 	int acno;
 	char name[50];
-    unsigned long int deposit;
+   	unsigned long int deposit;
 	char type;
 public:
-	void create_account();	//function to get data from user
+	void create_account();		//function to get data from user
 	void show_account() const;	//function to show data on screen
-	void modify();	//function to add new data
-	void dep(int);	//function to accept amount and add to balance amount
-	void draw(int);	//function to accept amount and subtract from balance amount
-	void report() const;	//function to show data in tabular format
-	int retacno() const;	//function to return account number
-	int retdeposit() const;	//function to return balance amount
-	char rettype() const;	//function to return type of account
-};         //class ends here
+	void modify();			//function to add new data
+	void dep(int);			//function to accept amount and add to balance amount
+	void draw(int);			//function to accept amount and subtract from balance amount
+	void report() const;		//function to show data in tabular format
+	int retacno() const;		//function to return account number
+	int retdeposit() const;		//function to return balance amount
+	char rettype() const;		//function to return type of account
+};        
+//class ends here----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -509,15 +512,11 @@ clrscr();
 //****************************************************************
 
 
-int main()
-{
- int gd=DETECT,gm;
-  initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
-
-
+void main()
+{	system("cls");
+ 	int gd=DETECT,gm;
+ 	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 	entrypage() ;
-
-	return 0;
 }
 
 
